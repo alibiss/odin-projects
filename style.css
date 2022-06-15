@@ -126,3 +126,22 @@ body {
   text-align: center;
   padding-top: 16px;
 }
+#content .quote {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  padding: 100px 200px;
+}
+#content .quote span {
+  display: block;
+  font-size: .75em;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+}
+#content .quote .author::before{
+  content:'-';
+}
