@@ -145,3 +145,36 @@ body {
 #content .quote .author::before{
   content:'-';
 }
+#content .join-us {
+  display: flex;
+  align-items: center;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 8px;
+  margin: 100px;
+  padding: 48px 128px;
+}
+#content .join-us h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+#content .join-us p {
+  font-weight: 300;
+}
+#content .join-us button {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px 2em;
+  cursor: pointer;
+}
+#content .join-us button:hover {
+  background-color: white;
+  color: #3882f6;
+}
+#content .join-us .message {
+  flex-grow: 2;
+}
