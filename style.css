@@ -76,8 +76,7 @@ body {
   padding: 8px;
 }
 #header .homepage:hover {
-  padding: 5px;
-  border: 3px dashed;
+  outline: 3px dashed;
 }
 #header #navbar a:hover {
   border-bottom: 2px solid;
@@ -211,4 +210,73 @@ body {
   font-size: 18px;
   font-weight: 300;
   padding: 32px;
+}
+
+/* Media queries */
+@media only screen and (max-width:920px) { 
+	#header .hero {
+    flex-basis: auto;
+    flex-direction: column;
+    max-height: none;
+  }
+  #header .hero img {
+    max-height: calc(100vw / 2.5);
+  }
+  #content .team ul {
+    flex-flow: row wrap;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  #content .team li {
+    max-width: none;
+    max-height: none;
+    flex-basis: 34%;
+  }
+  #content .team p {
+    font-size: 1.25em;
+  }
+  #content .quote {
+    padding: 1em 2em;
+  }
+  #content .join-us {
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 0;
+    margin: 0;
+    padding: 1.5em 2em;
+  }
+  #content .join-us h3 {
+    font-size: 2em;
+  }
+  #content .join-us p {
+    padding: .5em 2em 0;
+  }
+  #content .join-us button {
+    font-size: 1.5em;
+    padding: .5em 3em;
+  }
+}
+@media only screen and (max-width:800px) {
+  #header .navigator {
+    flex-direction: column;
+    text-align: center;
+  }
+  #header .homepage {
+    font-size: 4em;
+    padding-bottom: .5em;
+  }
+  #header .homepage:hover {
+    outline: none;
+  }
+  #header #navbar {
+    display: none;
+  }
+
+  /* TODO: Implement vertical mobile navigation menu */
+
+  #header .hero {
+    padding-top: 0;
+  }
 }
