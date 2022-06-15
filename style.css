@@ -178,3 +178,13 @@ body {
 #content .join-us .message {
   flex-grow: 2;
 }
+
+/* Footer */
+
+#footer {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 32px;
+}
