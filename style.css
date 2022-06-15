@@ -78,3 +78,51 @@ body {
   align-items: center;
   background-color: grey;
 }
+
+/* Content */
+
+#content {
+  flex: 1; /* Fill space between header and footer */
+}
+#content > * {
+  padding: 50px 0 100px;
+}
+#content .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#content .team h2 {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+#content .team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  padding-top: 50px;
+}
+#content .team li {
+  width: 170px;
+}
+#content .team img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Top part aligns placeholder text to center*/
+  width: 100%;
+  height: auto;
+  border: 4px solid #3882f6;
+  border-radius: 16px;
+  color: #1f2937;
+  aspect-ratio: 1;
+}
+#content .team p {
+  color: #1f2937;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 16px;
+}
